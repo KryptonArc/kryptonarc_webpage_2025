@@ -18,8 +18,9 @@ const nextConfig = {
       },
     ],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/kryptonarc_webpage_2025' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/kryptonarc_webpage_2025/' : '',
+  // No basePath needed for custom domain (kryptonarc.com)
+  basePath: '',
+  assetPrefix: '',
 }
 
 module.exports = nextConfig
